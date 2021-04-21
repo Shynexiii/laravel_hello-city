@@ -13,10 +13,12 @@
         @yield('content')
         <footer>
             <p>
-                © Copyright {{ date('Y') }} ·
-                <a href="/about-us">
+                © Copyright {{ date('Y') }}
+                @if(!Route::is('app_about_us'))
+                ·<a href="{{ route('app_about_us') }}">
                     About Us
                 </a>
+                @endif
             </p>
         </footer>
     </body>

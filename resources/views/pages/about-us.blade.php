@@ -6,7 +6,7 @@
 <p>
     Built with ♥ by Shynexiii.
 </p>
-<a href="/">
+<a href="{{ route('app_home') }}">
     Return to Home page
 </a>
 @endsection
