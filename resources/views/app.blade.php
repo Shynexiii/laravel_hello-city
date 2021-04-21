@@ -2,16 +2,22 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>@yield('title', 'Hello City')</title>
-
+            <meta content="width=device-width, initial-scale=1" name="viewport">
+                <title>
+                    @yield('title', config('app.name'))
+                </title>
+            </meta>
+        </meta>
     </head>
     <body>
         @yield('content')
-
         <footer>
-            <p>&copy; Copyright {{ date('Y') }} &middot; <a href="/about-us">About Us</a></p>
+            <p>
+                © Copyright {{ date('Y') }} ·
+                <a href="/about-us">
+                    About Us
+                </a>
+            </p>
         </footer>
     </body>
 </html>

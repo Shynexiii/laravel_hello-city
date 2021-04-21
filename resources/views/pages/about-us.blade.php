@@ -1,8 +1,12 @@
 @extends('app')
 
-@section('title', 'About Us | Hello City')
+@section('title', 'About Us | ' . config('app.name'))
 
 @section('content')
-    <p>Built with &hearts; by Shynexiii.</p>
-    <a href="/">Return to Home page</a>
+<p>
+    Built with ♥ by Shynexiii.
+</p>
+<a href="/">
+    Return to Home page
+</a>
 @endsection
