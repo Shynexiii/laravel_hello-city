@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport">
             <title>
-                @yield('title', config('app.name'))
+                {{ page_title($title ?? null) }}
             </title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
