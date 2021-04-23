@@ -6,6 +6,6 @@
     Hello from Niamey
 </h1>
 <p class="text-lg text-gray-800">
-    it's currently {{ date('h:i A')}}
+    it's currently {{ date('G:i')}}
 </p>
 @endsection
